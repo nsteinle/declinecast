@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "declinecast"
+dynamic = ["version"]
+description = "Amortized Bayesian decline-curve analysis on real regulator data: a neural posterior trained on simulated wells, validated by simulation-based calibration and coverage, scored on DJ Basin wells against three baselines, with a DuckDB SQL data layer and Tableau-ready exports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "DATA_LICENSE.md"]
+authors = [{ name = "Nathan Steinle" }]
+keywords = ["decline curve analysis", "oil and gas", "simulation-based inference",
+            "normalizing flows", "uncertainty quantification", "calibration", "duckdb", "sql",
+            "tableau"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "duckdb>=1.1",
+    "torch>=2.2",
+    "sbi>=0.27,<0.28",
+    "zuko>=1.4",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+dev = ["pytest>=8", "ruff>=0.5", "matplotlib>=3.7", "build", "twine"]
+
+[project.scripts]
+declinecast = "declinecast.cli:main"
+
+[project.urls]
+"Source" = "https://github.com/nsteinle/declinecast"
+"Method" = "https://arxiv.org/abs/2607.12971"
+"Data" = "https://ecmc.colorado.gov/data-maps-reports/downloadable-data-documents"
+
+[tool.hatch.version]
+path = "src/declinecast/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/declinecast"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "scripts", "docs", "README.md", "LICENSE", "DATA_LICENSE.md",
+           "CITATION.cff", "CHANGELOG.md", "SECURITY.md", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not slow'"
+markers = ["slow: full-size checks on the bundled model and data (several minutes on a laptop CPU)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

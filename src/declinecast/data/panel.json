@@ -1,0 +1,222 @@
+{
+  "source": "Colorado Energy & Carbon Management Commission (ECMC), per-well monthly production files and well master",
+  "download_page": "https://ecmc.colorado.gov/data-maps-reports/downloadable-data-documents",
+  "data_dictionary": "https://ecmc.state.co.us/documents/data/downloads/production/production_record_data_dictionary.htm",
+  "built_utc": "2026-11-07T13:54:54+00:00",
+  "built_with": "declinecast 0.1.0",
+  "cohort_rules": {
+    "first_year": 2014,
+    "min_months": 12,
+    "min_lateral_ft": 3000,
+    "min_spud_year": 2012
+  },
+  "files": {
+    "wells": {
+      "sha256": "5e38720066f7e9027408cea5f5fd173bc4624358abc3dafc56062c4259555d76",
+      "bytes": 246366
+    },
+    "months": {
+      "sha256": "137a155c54ecfc91230f7d102efd9e3dcca4d0d3233bf782cf0f1210fb9b9b15",
+      "bytes": 6210087
+    }
+  },
+  "sources": [
+    {
+      "name": "2013_prod_reports.zip",
+      "sha256": "ff562d7f9873f18d38ddb10cab953538e46a209c06b5a10ca90e0fb6e3af601c"
+    },
+    {
+      "name": "2014_prod_reports.zip",
+      "sha256": "b181054a874b2d4ae79b1ec8d4e6fd7de2d7a25d7ac80a3c94bf3d4d80df4768"
+    },
+    {
+      "name": "2015_prod_reports.zip",
+      "sha256": "65c9a97469fd56aa4f4273777ab96f106795a2c01fbaf9fcd4fabc3f82f2d014"
+    },
+    {
+      "name": "2016_prod_reports.zip",
+      "sha256": "839ac5535e4e906057bd96cd4663b43bb8f8f591cbf588ea175337f7006e4c32"
+    },
+    {
+      "name": "2017_prod_reports.zip",
+      "sha256": "29f87045adc085822bc921d4fe2793a3e8e26fe6d07901edb46c8c5c2dc37945"
+    },
+    {
+      "name": "2018_prod_reports.zip",
+      "sha256": "34f2184149f3bbbde072e546f05e16bb775b7d6f3de45fc7e8965ac7d6ad7855"
+    },
+    {
+      "name": "2019_prod_reports.zip",
+      "sha256": "14dae3c30fc7975eb4b111f3980ad911d8b9876452886f40228d021f0e836cb0"
+    },
+    {
+      "name": "2020_prod_reports.zip",
+      "sha256": "3656df463515891c3b0dddc9e0b442a42ac77a6caa9197210aaf74cacacf3723"
+    },
+    {
+      "name": "2021_prod_reports.zip",
+      "sha256": "37a348ba04f2d6ee842f80f534856c7102d9c998c22ea16172a05987da19130f"
+    },
+    {
+      "name": "2022_prod_reports.zip",
+      "sha256": "4304f871f6a579f90f88ae8da71c9adda278c90e7f6f24388b42388971b626bf"
+    },
+    {
+      "name": "2023_prod_reports.zip",
+      "sha256": "156098457e3fec27de171cba54425fd2655731fe5c46173c3ac58f890050bc4c"
+    },
+    {
+      "name": "2024_prod_reports.zip",
+      "sha256": "c95967bd4d5df796fff4f647eb721acdbe22b918fde174f6fd62c897a65587b1"
+    },
+    {
+      "name": "2025_prod_reports.zip",
+      "sha256": "0021f2002911c0f0d15e521f5297afc2b7398b2883e53b2adb635ac417e66744"
+    },
+    {
+      "name": "WELLS_SHP.ZIP",
+      "sha256": "552001f12e3f9842346ba9a5813f9e16f8b426c58da47269945c7938612f5fc3"
+    }
+  ],
+  "quality": {
+    "files": [
+      {
+        "file_year": 2013,
+        "rows": 730819,
+        "other_year_rows": 0,
+        "first_year": 2013,
+        "last_year": 2013
+      },
+      {
+        "file_year": 2014,
+        "rows": 749177,
+        "other_year_rows": 0,
+        "first_year": 2014,
+        "last_year": 2014
+      },
+      {
+        "file_year": 2015,
+        "rows": 757492,
+        "other_year_rows": 0,
+        "first_year": 2015,
+        "last_year": 2015
+      },
+      {
+        "file_year": 2016,
+        "rows": 752581,
+        "other_year_rows": 0,
+        "first_year": 2016,
+        "last_year": 2016
+      },
+      {
+        "file_year": 2017,
+        "rows": 750535,
+        "other_year_rows": 0,
+        "first_year": 2017,
+        "last_year": 2017
+      },
+      {
+        "file_year": 2018,
+        "rows": 744618,
+        "other_year_rows": 0,
+        "first_year": 2018,
+        "last_year": 2018
+      },
+      {
+        "file_year": 2019,
+        "rows": 733008,
+        "other_year_rows": 0,
+        "first_year": 2019,
+        "last_year": 2019
+      },
+      {
+        "file_year": 2020,
+        "rows": 706095,
+        "other_year_rows": 0,
+        "first_year": 2020,
+        "last_year": 2020
+      },
+      {
+        "file_year": 2021,
+        "rows": 694123,
+        "other_year_rows": 0,
+        "first_year": 2021,
+        "last_year": 2021
+      },
+      {
+        "file_year": 2022,
+        "rows": 678352,
+        "other_year_rows": 0,
+        "first_year": 2022,
+        "last_year": 2022
+      },
+      {
+        "file_year": 2023,
+        "rows": 666737,
+        "other_year_rows": 0,
+        "first_year": 2023,
+        "last_year": 2023
+      },
+      {
+        "file_year": 2024,
+        "rows": 657012,
+        "other_year_rows": 0,
+        "first_year": 2024,
+        "last_year": 2024
+      },
+      {
+        "file_year": 2025,
+        "rows": 759328,
+        "other_year_rows": 240861,
+        "first_year": 2000,
+        "last_year": 2025
+      }
+    ],
+    "raw_rows": 9379877,
+    "record_months": {
+      "first": 24156,
+      "last": 24310
+    },
+    "versions": {
+      "records": 9140032,
+      "records_in_two_files": 239845,
+      "copies_with_different_oil": 1981,
+      "copies_with_different_days": 304,
+      "duplicate_rows_removed": 239845
+    },
+    "status_codes_not_upper_case": 2053,
+    "well_months": {
+      "well_months": 7669322,
+      "commingled_well_months": 1117247,
+      "records_in_commingled": 2587957,
+      "zero_production": 1746662,
+      "zero_or_missing_days": 1714149,
+      "missing_days": 0,
+      "oil_without_days": 274,
+      "days_beyond_month": 0,
+      "negative_volumes": 400,
+      "revised_well_months": 283663
+    },
+    "cohort_funnel": {
+      "wells_producing": 61375,
+      "dj_formation": 30373,
+      "starts_in_window": 9341,
+      "enough_months": 8600,
+      "in_well_master": 8600,
+      "impossible_geometry": 20,
+      "old_or_missing_spud": 107,
+      "short_or_missing_lateral": 236,
+      "cohort": 8344,
+      "cohort_24_months": 7670,
+      "cohort_36_months": 6945,
+      "cohort_60_months": 5582,
+      "wells_starting_at_window_edge": 46877
+    },
+    "cohort_rules": {
+      "first_year": 2014,
+      "min_months": 12,
+      "min_lateral_ft": 3000,
+      "min_spud_year": 2012
+    }
+  }
+}

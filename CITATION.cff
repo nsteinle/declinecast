@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "declinecast"
+version: 0.1.0
+date-released: 2026-11-07
+license: MIT
+type: software
+authors:
+  - family-names: Steinle
+    given-names: Nathan
+    orcid: "https://orcid.org/0000-0003-0658-402X"
+references:
+  - type: article
+    title: "A new model for the continuum spectra of AM CVn binaries and multi-messenger inference with normalizing flows"
+    authors:
+      - family-names: Steinle
+        given-names: Nathan
+      - family-names: Safi-Harb
+        given-names: Samar
+      - family-names: MacMaster
+        given-names: Austin
+      - family-names: Rivera Sandoval
+        given-names: Liliana
+      - family-names: Breivik
+        given-names: Katelyn
+      - family-names: Woods
+        given-names: Tyrone E.
+      - family-names: Maccarone
+        given-names: Tom
+      - family-names: Wagg
+        given-names: Tom
+    identifiers:
+      - type: other
+        value: "arXiv:2607.12971"
+    url: "https://arxiv.org/abs/2607.12971"
+  - type: data
+    title: "Production reports and well master (downloadable data)"
+    authors:
+      - name: "Colorado Energy & Carbon Management Commission"
+    url: "https://ecmc.colorado.gov/data-maps-reports/downloadable-data-documents"
