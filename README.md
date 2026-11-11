@@ -146,7 +146,10 @@ without `--overwrite`. See SECURITY.md.
 Production and well data courtesy of the Colorado Energy & Carbon Management Commission. The
 bundled extract is derived, and is not an official ECMC product (DATA_LICENSE.md). The method
 is from N. Steinle et al., "A new model for the continuum spectra of AM CVn binaries and
-multi-messenger inference with normalizing flows", arXiv:2607.12971; cite the package with
-CITATION.cff.
+multi-messenger inference with normalizing flows", arXiv:2607.12971. Each release is archived
+on Zenodo: [doi:10.5281/zenodo.24095678](https://doi.org/10.5281/zenodo.24095678) always resolves to
+the latest version, and version 0.1.0 is [doi:10.5281/zenodo.24095679](https://doi.org/10.5281/zenodo.24095679).
+Cite the package with CITATION.cff; the release process is in
+[docs/DEPLOY.md](https://github.com/nsteinle/declinecast/blob/main/docs/DEPLOY.md).
 
 MIT License.
