@@ -6,6 +6,12 @@ built from them in Tableau Public, the free desktop app (now called Tableau Desk
 Edition). Tableau Public opens text files but not Parquet, and allows up to 15 million rows per
 data source, so the tables here are well within its limits.
 
+The dashboard published at
+[Tableau Public](https://public.tableau.com/app/profile/nathan.steinle/viz/declinecast36-monthcumulativeoilforecastswithrangesforDJBasinwells/declinecast)
+is a shorter version of the one described here: I built it in the Tableau Public web editor
+from `scores.csv`, `examples.csv` and `forecasts.csv` of the test scoring. The steps below
+are written for the desktop app.
+
 The tables are tested (`tests/test_cli.py::test_validate_score_tableau`); the steps in Tableau
 are not, because they are done by hand in the app. Menu names can differ slightly between
 versions.

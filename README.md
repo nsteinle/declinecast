@@ -15,6 +15,10 @@ tables) is DuckDB SQL, tested against an independent pandas version.
 The package ships a derived extract of 8,344 DJ Basin horizontal Niobrara and Codell wells
 from the Colorado Energy & Carbon Management Commission (ECMC) and a pretrained model.
 
+**Dashboard:** the results on the locked test wells are on
+[Tableau Public](https://public.tableau.com/app/profile/nathan.steinle/viz/declinecast36-monthcumulativeoilforecastswithrangesforDJBasinwells/declinecast),
+built from the tables that `declinecast tableau` writes.
+
 **The business question:** an acquisitions team, a royalty buyer or a reserve-based lender
 looks at a well that has produced for a year. How much oil will it have produced in three
 years, what are the low and high cases, and can those cases be trusted?
@@ -88,6 +92,11 @@ unlike the training wells).
 The locked test is scored with `declinecast score --split test --unlock-test`; without
 `--unlock-test` the command refuses. `--as-reported` gives every method the production as first
 filed, with the outcome kept final.
+
+`declinecast tableau` writes the results as CSV tables for Tableau Public, and
+[docs/TABLEAU.md](https://github.com/nsteinle/declinecast/blob/main/docs/TABLEAU.md) describes
+a dashboard built from them. The dashboard is published at
+[Tableau Public](https://public.tableau.com/app/profile/nathan.steinle/viz/declinecast36-monthcumulativeoilforecastswithrangesforDJBasinwells/declinecast).
 
 Rebuilding the extract from the raw files (opt-in; `fetch` requests the 14 published files one
 at a time and never crawls):
